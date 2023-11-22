@@ -1,0 +1,163 @@
+/* style.css */
+@charset "UTF-8";
+
+
+/*
+    Paleta de cores:
+    Verde: #49a09d
+    Lilás: #5f2c82
+    Black: #00000
+    White: #fffff
+*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-color: #5f2c82;
+    height: 100vh;
+    width: 100vw;
+}
+
+navbar {
+    background-color: #5f2c82; /* Cor de fundo da barra de navegação */
+    overflow: hidden; /* Garante que o conteúdo flua ao redor da barra de navegação */
+}
+
+.logo {
+    float: left; /* Coloca o logo à esquerda da barra de navegação */
+    padding: 10px; /* Adiciona algum espaçamento ao redor do logo */
+}
+
+.nav-links {
+    float: right; /* Coloca os links de navegação à direita da barra de navegação */
+    list-style: none; /* Remove os marcadores de lista padrão */
+    margin: 0; /* Remove as margens padrão da lista */
+    padding: 0; /* Remove o preenchimento padrão da lista */
+}
+
+.nav-links li {
+    display: inline-block; /* Faz com que os itens da lista apareçam na mesma linha */
+    margin-right: 20px; /* Adiciona espaçamento entre os itens da lista */
+}
+
+.nav-links a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado padrão dos links */
+    font-weight: bold; /* Adiciona negrito ao texto dos links */
+    font-size: 18px; /* Tamanho da fonte dos links */
+}
+
+main{ 
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#ilogin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.497);
+
+    transform: translate(-50%,-50%);
+    transition: width .4s, height .2s;
+    transition-timing-function: ease;
+}
+
+section#ilogin > div#iimagem{
+    display: block;
+    background: #5f2c82 center center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+section#ilogin > div#iformulario{
+    display: block;
+    padding: 10px;
+
+}
+
+section#ilogin > div#iformulario > h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#ilogin > div#iformulario > p{
+    text-align: justify;
+    margin: 10px 0px 0px 0px;
+    font-size: .8em;
+}
+
+
+section#icadastro > div#iformulario {
+    display: block;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box; /* Isso ajuda a incluir padding na largura total */
+}
+
+div.c-campo > input {
+    background-color: #68d9d5;
+    font-size: 1em;
+    width: 95%;
+    height: 30px; /* Ajuste conforme necessário */
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+form > div.c-campo {
+    display: block;
+    background-color: #5f2c82;
+    height: 40px;
+    width: 100%;
+    margin: 5px 0px;
+    border-radius: 7px;
+    border: 1px solid #5f2c82;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 30px;
+    background-color: #49a09d;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color: #5f2c82;
+}
+
+form > a.c-botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-top: 3px;
+}
+
+form > a.c-botao:hover {
+    background-color: #5f2c82;
+    color: white;
+}

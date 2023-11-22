@@ -1,0 +1,149 @@
+ /* cadastro.css */
+ @charset "UTF-8";
+
+/*
+    Paleta de cores:
+    Verde: #49a09d
+    Lilás: #5f2c82
+    Black: #00000
+    White: #fffff
+*/
+
+
+div.c-campo > input{
+    background-color: #68d9d5;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 90%;
+    border: 0px;
+    border-radius: 5px;
+    padding: 4px;
+    transform: translateY(-11.5px); /* Por questões de compatibilidade com os navegadores */
+}
+
+div.c-campo > input:focus-within{
+    background-color: white;
+}
+
+form > div.c-campo{
+    display: block;
+    background-color: #5f2c82;
+    height: 40px;
+    width: 90%;
+    margin: 5px 0px;
+    border-radius: 7px;
+    border: 1px solid #5f2c82;
+}
+
+form > div.c-campo > label{
+    display: none;
+}
+
+form > div.c-campo > span{
+    /* background-color: black; */
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+form > input[type=submit]{
+    display: block; 
+    font-size: 1em;
+    width: 90%;
+    height: 30px;
+    background-color: #49a09d;
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+    background-color: #5f2c82;
+}
+
+form > a.c-botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    color: black;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    border: 1px solid #49a09d;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding-top: 3px;
+    
+}
+
+form > a.c-botao:hover{
+    background-color: #5f2c82;
+    color: white;
+}
+
+form > a.c-botao > span{
+    font-size: .8em;
+    vertical-align: middle;
+}
+
+/* Estilos para a seção de cadastro */
+section#icadastro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background-color: white;
+    width: 930px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.497);
+    transform: translate(-50%, -50%);
+    transition: width .8s, height .2s;
+    transition-timing-function: ease;
+}
+
+section#icadastro > div#iimagem {
+    display: block;
+    height: 100%;
+    width: 50%;
+    float: left;
+    background-size: cover;
+}
+
+section#icadastro > div#iformulario {
+    display: block;
+    padding: 10px;
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+
+/* Estilos específicos para o formulário de cadastro */
+section#icadastro > div#iformulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section#icadastro > div#iformulario > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+section#icadastro > div#iformulario > form > div.c-campo {
+    margin-bottom: 15px;
+}
+
+/* Outros estilos... */
+section#icadastro > div#iimagem {
+    display: block;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+

@@ -1,0 +1,68 @@
+/* public/css/media-query.css */
+@charset "UTF-8";
+
+/* Configuração para tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#ilogin {
+        width: 750px;
+        height: 349px;
+    }
+
+    section#ilogin > div#iimagem {
+        float: right;
+        width: 40%;
+        height: 100%;
+    }
+
+    section#ilogin > div#iformulario {
+        float: left;
+        width: 60%;
+    }
+
+    div#iformulario > p {
+        font-size: 1.2em;
+        padding: 10px 0px;
+    }
+
+    /* Ajustes nos botões para melhorar a visualização */
+    form > input[type=submit],
+    form > a.c-botao {
+        width: 100%;
+    }
+}
+
+/* COnfiguração para desktop */
+@media screen and (min-width:992px){
+    body{
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+    }
+
+    section#ilogin{
+        width: 930px;
+        height: 360px;
+    }
+
+    section#ilogin > div#iimagem{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#iformulario > h1{
+        font-size: 2em;
+    }
+
+    div#iformulario > p{
+        font-size: 1em;
+        padding: 10px 0px;
+    }
+
+    section#ilogin > div#iformulario{
+        float: left;
+        width: 50%;
+    }
+}

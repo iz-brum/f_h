@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Api\\Websocket\\": "src/"
+        }
+    },
+    "require": {
+        "vlucas/phpdotenv": "^5.5",
+        "cboden/ratchet": "^0.4.4",
+        "react/socket": "^1.14"
+    }
+}
